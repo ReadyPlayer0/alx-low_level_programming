@@ -23,3 +23,4 @@ void times_table(void);
 void jack_bauer(void);
 
 void print_alphabet_x10(void);
+long int i, num1, num2, next;
