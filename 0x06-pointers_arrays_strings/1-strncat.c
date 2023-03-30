@@ -6,19 +6,14 @@
  *
  * Return: a pointer to the resulting string
  */
-char *_strncat(char *dest, const char *src, size_t n)
+char *_strncat(char *dest, char *src, int n)
 {
-    char *dest_start = dest;
+	char *ret = dest;
 
-    while (*dest != '\0') {
-        dest++;
-    }
-
-    while (n-- > 0 && *src != '\0') {
-        *dest++ = *src++;
-    }
-
-    *dest = '\0';
-
-    return dest_start;
+	while (*dest)
+		dest++;
+	while (*src && n--)
+		*dest++ = *src++;
+	*dest = '\0';
+	return (ret);
 }
