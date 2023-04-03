@@ -7,15 +7,15 @@
  *
  * Return: Always Void
  */
+#include <stdio.h>
+
 void print_diagsums(int *a, int size)
 {
-    int sum1 = 0, sum2 = 0;
-    int i, j;
+    int i, sum1 = 0, sum2 = 0;
 
-    for (i = 0; i < size; i++)
-    {
-        sum1 += *(a + i * size + i);  // add elements of first diagonal
-        sum2 += *(a + i * size + size - 1 - i);  // add elements of second diagonal
+    for (i = 0; i < size; i++) {
+        sum1 += *(a + i*size + i);
+        sum2 += *(a + i*size + size - 1 - i);
     }
 
     printf("%d, %d\n", sum1, sum2);
