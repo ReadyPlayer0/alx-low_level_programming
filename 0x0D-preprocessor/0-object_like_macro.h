@@ -1,6 +1,5 @@
-#ifndef MYHEADER_H
-#define MYHEADER_H
+#ifndef OBJECT_LK_MACRO_H
+#define OBJECT_LK_MACRO_H
 
 #define SIZE 1024
-
-#endif /* MYHEADER_H */
+#endif /* OBJECT_LK_MACRO_H */
