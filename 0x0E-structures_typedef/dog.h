@@ -9,13 +9,10 @@
  *
  * Description: struct dog is a structure for a dog with a name, age, and owner.
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-
-typedef struct dog dog_t;
-
+} dog_t;
 #endif /* DOG_H */
