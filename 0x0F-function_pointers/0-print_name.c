@@ -11,32 +11,9 @@
  *
  * returns: void
  */
+
 void print_name(char *name, void (*f)(char *))
 {
-    f(name);
-}
-
-/**
- * Function: print_name_default
- * ----------------------------
- * Default printing function for printing a name.
- *
- * name: Pointer to a string representing a name.
- *
- * returns: void
- */
-void print_name_default(char *name)
-{
-    printf("Name: %s\n", name);
-}
-
-int main()
-{
-
-    char name[] = "John Doe";
-
-    printf("Printing name using default function:\n");
-    print_name(name, print_name_default);
-
-    return 0;
+	if (name && f)
+		f(name);
 }
