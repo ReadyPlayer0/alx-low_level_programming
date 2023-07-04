@@ -83,7 +83,7 @@ Copy code
 listint_t *find_listint_loop(listint_t *head);
 This function finds the starting node of a loop in a linked list.
 
-Parameters:
+Parameters:s
 
 head: Pointer to the head of the linked list.
 Returns:
